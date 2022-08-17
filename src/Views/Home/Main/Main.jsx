@@ -7,6 +7,11 @@ import { motion } from "framer-motion"
 
 export const Main = () => {
 
+    const scrollTo = (nodeSelector) => {
+        const domNode = document.querySelector(nodeSelector)
+        window.scrollTo?.({ top: domNode.offsetTop, behavior: 'smooth' });
+    }
+
     const textAnimateR = {
         offscreen: { x: -100, opacity: 0 },
         onscreen: {
@@ -33,15 +38,15 @@ export const Main = () => {
         }
     }
 
-    const textAnimateD = {
-        offscreen: { y: 100, opacity: 0 },
+    const textAnimateAppear = {
+        offscreen: { x: 0, opacity: 0 },
         onscreen: {
-            y: 0,
+            x: 0,
             opacity: 1,
             transition: {
                 type: "spring",
                 bounce: 0.4,
-                duration: 2.5
+                duration: 7
             }
         }
     }
@@ -49,11 +54,11 @@ export const Main = () => {
     return (
         <div className="main">
             <div className="main__button">
-                <motion.button
+                <motion.button onClick={() => scrollTo('.access')}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
                     viewport={{ once: false, amount: 0.5 }}
-                    variants={textAnimateD}>Pruebalo Ya!!</motion.button>
+                    variants={textAnimateAppear}>Pruebalo Ya!!</motion.button>
             </div>
             <div className="main__container1">
                 <div className="main__container1__img">
@@ -73,24 +78,25 @@ export const Main = () => {
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </motion.div>
             </div>
-            <motion.div className="main__container2"
-                initial={"offscreen"}
-                whileInView={"onscreen"}
-                viewport={{ once: false, amount: 0.5 }}
-                variants={textAnimateD}>
+            <div className="main__container2"
+            >
                 <div className="main__container1__img">
                     <motion.img
                         initial={"offscreen"}
                         whileInView={"onscreen"}
                         viewport={{ once: false, amount: 0.5 }}
-                        variants={textAnimateD}
+                        variants={textAnimateL}
                         src={diet} alt="healthy" />
                 </div>
-                <div className="main__container1__text">
+                <motion.div className="main__container1__text"
+                    initial={"offscreen"}
+                    whileInView={"onscreen"}
+                    viewport={{ once: false, amount: 0.5 }}
+                    variants={textAnimateR}>
                     <h1>Beneficio 2</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                </div>
-            </motion.div>
+                </motion.div>
+            </div>
             <div className="main__container1">
                 <div className="main__container1__img">
                     <motion.img

@@ -15,7 +15,7 @@ export const Navbar = () => {
                     <h2>Logo</h2>
                 </div>
                 <div className="navbar__container__list">
-                    <p onClick={() => scrollTo('.main__container1')}>QUE ME APORTARA?</p>
+                    <p onClick={() => scrollTo('.main__container1')}>¿QUE ME APORTARA?</p>
                     <button onClick={() => scrollTo('.access')}>PRUEBALO YA</button>
                 </div>
             </div>

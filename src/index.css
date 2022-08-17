@@ -12,6 +12,10 @@
 	font-weight: 400;
 }
 
+button{
+	cursor: pointer;
+}
+
 html {
 	scroll-behavior: smooth;
 }
