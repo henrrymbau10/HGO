@@ -1,0 +1,32 @@
+.navbar{
+    top: 0;
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+
+
+        &__list{
+            display: flex; 
+            align-items: center;
+            p{
+                margin-right: 2rem;
+            }
+
+            button{
+                padding: 1rem 2rem;
+                background: transparent;
+                border: 1px solid #7BC042;
+
+                &:hover{
+                    background: #7BC042;
+                    color: #F4F1EB;
+                }
+            }
+        }
+    }
+}

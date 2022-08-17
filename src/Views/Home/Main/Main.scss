@@ -1,0 +1,100 @@
+.main{
+    background-color: #F4F1EB;
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+
+        button{
+            padding: 1rem 2rem;
+            background-color: #7BC042;
+            color: #F4F1EB;
+            border-radius:15px;
+            border: 1px solid #7BC042;
+
+            &:hover{
+                background: transparent;
+                color: #7BC042;
+            }
+        }
+    }
+
+    &__container1{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 3rem 2rem;
+
+        &__img{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            img{
+                height: 400px;
+                width: 400px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        &__text{
+            width: 60%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #7BC042;
+            border-radius: 15px;
+            color: #F4F1EB;
+            padding: 0 2rem;
+
+            h1{
+                padding: 2rem 0;
+            }
+
+            p{
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
+    &__container2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        padding: 3rem 2rem;
+
+        &__img{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            img{
+                height: 400px;
+                width: 400px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        &__text{
+            width: 60%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #7BC042;
+            border-radius: 15px;
+            color: #F4F1EB;
+            padding: 0 2rem;
+
+            h1{
+                padding: 2rem 0;
+            }
+
+            p{
+                padding-bottom: 2rem;
+            }
+        }
+    }
+    
+}

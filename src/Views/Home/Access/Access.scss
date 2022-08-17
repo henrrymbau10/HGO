@@ -1,0 +1,63 @@
+.access{
+    background-color: #F4F1EB;
+    padding: 2rem 0;
+    
+    &__container{
+      display: flex;
+      background-color: #7BC042;
+      color: #F4F1EB;
+      margin: 2rem;
+      border-radius: 15px;
+      
+      &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+        
+        h1{
+            padding-bottom: 2rem;
+            padding-top: 3rem;
+        }
+
+        p{
+            padding-bottom: 2rem;
+        }
+
+        &__input{
+            padding-bottom: 3rem;
+            input{
+                padding: 1rem 2rem 1rem 0;
+                background: transparent;
+                
+
+                &::placeholder{
+                    color: #F4F1EB;
+                }
+            }
+
+            button{
+                padding: .5rem 2rem;
+                border-radius: 15px;
+
+                &:hover{
+                    background: transparent;
+                    color: #F4F1EB;
+                    border: 1px solid #F4F1EB;
+                }
+            }
+        }
+      }
+
+      &__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 70%;
+            border-radius: 20px;
+        }
+      }
+    }
+}
