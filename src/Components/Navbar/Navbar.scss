@@ -2,12 +2,19 @@
     top: 0;
     width: 100%;
     position: absolute;
-    top: 1rem;
+    background: rgba(255, 255, 255, 0.6); // Make sure this color has an opacity of less than 1
+    backdrop-filter: blur(8px); 
+    padding: 1rem 0;
+    align-items: center;
 
     &__container{
         display: flex;
         justify-content: space-between;
         padding: 0 2rem;
+
+        &__mobile{
+            display: none;
+        }
 
 
         &__list{
@@ -27,6 +34,17 @@
                     background: #7BC042;
                     color: #F4F1EB;
                 }
+            }
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width:859px){
+        &__container{
+            &__list{
+                display: none;
+            }
+            &__mobile{
+                display: block;
             }
         }
     }

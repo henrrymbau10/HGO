@@ -96,5 +96,65 @@
             }
         }
     }
+
+    &__container4{
+        clip-path: polygon(0% 20%, 100% 0, 100% 80%, 0% 100%);
+
+        background-image: url(../../../Assets/Desktop/testimony.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-attachment: fixed;
+        background-position: center;
+
+        h1{
+            width: 50%;
+            text-align: center;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width:859px){
+        &__container1{
+            flex-direction: column;
+
+            &__img{
+                img{
+                    width: 300px;
+                    height: 300px;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            &__text{
+                width: 90%;
+            }
+        }
+        &__container2{
+            flex-direction: column;
+
+            &__img{
+                img{
+                    width: 300px;
+                    height: 300px;
+                    margin-bottom: 2rem;
+                }
+            }
+            &__text{
+                width: 90%;
+            }
+        }
+
+        &__container4{
+            clip-path: polygon(0% 20%, 100% 0, 100% 80%, 0% 100%);
+            background-image: url(../../../Assets/Desktop/testimony.jpeg);
+            background-attachment: inherit;
+            background-position: top;
+        }
+    }
+
     
 }

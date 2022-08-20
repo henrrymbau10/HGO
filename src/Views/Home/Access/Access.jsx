@@ -29,7 +29,6 @@ export const Access = () => {
                     <h1>A un paso de acercarte a tu mejor version</h1>
                     <p>Porque cada comida impacta no solo en la salud, recuperacion y el bienestar general, si no que tambien en el medio ambiente y economias locales. Hagamos mejores elecciones juntos</p>
                     <div className="access__container__left__input">
-                        <input type="text" placeholder="Correo Electronico" />
                         <button>Descubrelo</button>
                     </div>
                 </div>
@@ -37,6 +36,11 @@ export const Access = () => {
                     <img src={healthy} alt="healthy" />
                 </div>
             </motion.div>
+            <div className="access__copy">
+                <p>mail@mail.com</p>
+                <p>Copyright © 2022 HGO</p>
+                <p>+34 666 666 666</p>
+            </div>
         </div>
     )
 }
